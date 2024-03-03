@@ -1,0 +1,25 @@
+.root {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  transform: translateY(-4%);
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.bar img {
+  display: block;
+  max-height: var(--frame-width);
+}
+
+.bar:first-child {
+  transform: translateX(-60%);
+}
+
+.bar:last-child {
+  transform: translateX(60%);
+}

@@ -1,0 +1,14 @@
+.root img {
+  max-width: 80px;
+}
+
+@media (width >= 64rem) {
+  .root img {
+    max-width: initial;
+  }
+}
+
+.root div {
+  position: absolute;
+  bottom: 0;
+}

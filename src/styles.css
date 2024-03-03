@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/SFProDisplay-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+  src: url('/fonts/SFProDisplay-LightItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/SFProDisplay-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url('/fonts/SFProDisplay-RegularItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/SFProDisplay-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+  src: url('/fonts/SFProDisplay-MediumItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/SFProDisplay-Semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+  src: url('/fonts/SFProDisplay-SemiboldItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/SFProDisplay-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url('/fonts/SFProDisplay-BoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+  src: url('/fonts/SFProDisplay-HeavyItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/SFProDisplay-Heavy.woff2') format('woff2');
+}
+
+* {
+  margin: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --gray: #666;
+  --primary: #0381ff;
+  --primary-rgb: 3 129 255;
+  --body-color: #0b172a;
+  --border-color: rgba(0 0 0 / 8%);
+}
+
+body {
+  display: block;
+  background-color: #f5f5f7;
+}
+
+body,
+html {
+  font-family:
+    'SF Pro Display',
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    Ubuntu,
+    Cantarell,
+    'Noto Sans',
+    sans-serif,
+    BlinkMacSystemFont,
+    Oxygen,
+    'Open Sans',
+    'Helvetica Neue';
+  font-feature-settings:
+    'zero' on,
+    'salt' on;
+  color: var(--text-body);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  min-height: 100dvh;
+  min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+}

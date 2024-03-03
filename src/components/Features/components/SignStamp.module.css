@@ -1,0 +1,78 @@
+.root {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.popover {
+  position: relative;
+
+  width: max-content;
+  padding: 8px;
+
+  background-color: rgb(255 255 255 / 90%);
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+}
+
+.popover img {
+  max-width: 80px;
+}
+
+@media (width >= 64rem) {
+  .popover {
+    padding: 16px;
+  }
+
+  .popover img {
+    max-width: initial;
+  }
+}
+
+.completed {
+  transform: translateX(45%);
+}
+
+.signature {
+  transform: translate(-45%, 50%);
+}
+
+.btn {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+  padding: 5px;
+
+  background-color: var(--primary);
+  border: 1px solid var(--white);
+  border-radius: 100%;
+}
+
+@media (width >= 64rem) {
+  .btn {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.btn:first-child {
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.btn:last-child {
+  right: 0;
+  bottom: 0;
+  transform: translate(50%, 50%);
+}
