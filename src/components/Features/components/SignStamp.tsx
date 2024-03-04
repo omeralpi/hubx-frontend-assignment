@@ -39,18 +39,20 @@ export const SignStamp = () => {
   );
 };
 
-const Popover: React.FC<React.PropsWithChildren> = ({ children }) => {
-  return (
-    <div className={styles.popover}>
-      <div>
-        <button className={styles.btn}>
-          <CloseIcon />
-        </button>
-        <button className={styles.btn}>
-          <ExpandIcon />
-        </button>
-      </div>
-      {children}
+interface IPopoverProps {
+  children: React.ReactNode;
+}
+
+const Popover = ({ children }: IPopoverProps) => (
+  <div className={styles.popover}>
+    <div>
+      <button className={styles.btn}>
+        <CloseIcon />
+      </button>
+      <button className={styles.btn}>
+        <ExpandIcon />
+      </button>
     </div>
-  );
-};
+    {children}
+  </div>
+);

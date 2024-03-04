@@ -106,27 +106,25 @@ export const Features = () => {
   );
 };
 
-const Frame: React.FC<React.PropsWithChildren> = (props) => {
-  return (
-    <motion.div
-      initial={{
-        y: '100%',
-      }}
-      animate={{
-        y: 0,
-      }}
-      exit={{
-        y: '100%',
-      }}
-      transition={{
-        type: 'tween',
-        duration: 1,
-      }}
-      className={styles.frame}
-      {...props}
-    />
-  );
-};
+const Frame: React.FC<React.PropsWithChildren> = (props) => (
+  <motion.div
+    initial={{
+      y: '100%',
+    }}
+    animate={{
+      y: 0,
+    }}
+    exit={{
+      y: '100%',
+    }}
+    transition={{
+      type: 'tween',
+      duration: 1,
+    }}
+    className={styles.frame}
+    {...props}
+  />
+);
 
 const Checkmark = () => (
   <motion.svg
